@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack Your Bags</title>
+    <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bree+Serif&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./logo.jpg">
+</head>
+<body style="background-color: rgba(165, 165, 220, 0.392);">
+
+    <!-- header -->
+     <header class="sticky-top" style="z-index: 1030;">
+        <div>
+            <div class="headimg">
+                <a href="#"><img src="./logo.png" width="100px" height="80px" class="rounded-circle m-2"></a>
+                    
+                <h2 class="mt-4 headtext" style="text-decoration: none;">Pack Your Bags</h2>
+            </div>
+        </div>
+        <div>
+            <ul class="list-unstyled">
+                <li><form action="">
+                    <input id="search" type="text" placeholder="search with keywords">
+                </form></li>
+                <li><a href="" style="text-decoration: none;"><i class="mb-3 fa-solid fa-search"></i></a></li>
+                <li><a href="#home" style="text-decoration: none;">Home</a></li>
+                <li><a href="#blogss" style="text-decoration: none;">Blog</a></li>
+                <li><a href="#destinationss" style="text-decoration: none;">Destinations</a></li>
+                <li><a href="#aboutss" style="text-decoration: none;">About</a></li>
+                <li><a href="#contactss" style="text-decoration: none;">Contact</a></li>
+            </ul>
+        </div>
+         
+     </header>
+
+     <!-- carousel -->
+    <section class="carousel">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://www.hdwallpapers.in/download/eiffel_tower_paris_with_blur_blue_sky_background_4k_hd_travel-HD.jpg" class="d-block w-100" alt="..." height="500px">
+                    <div class="caritem">
+                        <a class="btn btn-warning" id="carobtn">Become a Member</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wallpapers.com/images/featured/brazil-b4dydodrhw6tw1ya.jpg" class="d-block w-100" alt="..." height="500px">
+                    <div class="caritem">
+                        <a class="btn btn-warning" id="carobtn">Share Your Blog</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://wallpapercave.com/wp/wp7868644.jpg" class="d-block w-100" alt="..." height="500px">
+                    <div class="caritem">
+                        <a class="btn btn-warning" id="carobtn">Add Travel Photos</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </section>
+
+    <!-- slides -->
+     <section class="additional" id="home">
+      <div id="backimg">
+        <br><br>
+        <div>
+          <h2 style="text-align: center; text-decoration: underline; text-shadow: 3px 3px 3px rgb(255, 255, 255); font-size: 50px; color: rgb(0, 0, 0); background-color: rgba(255, 255, 255, 0.542); width: 400px; height: 70px; margin: auto; border-radius: 20px; ">Travel With Us</h2>
+        </div>
+          <div class="slidecont">
+          <div class="d-flex justify-content-center me-5" id="rows">
+              <div id="cols" class="m-5"><i class="fa-solid fa-plane-up"></i></i><br>Flights</div>
+              <div id="cols" class="m-5"><i class="fa-solid fa-hotel"></i><br>Hotels</div>
+              <div id="cols" class="m-5"><i class="fa-solid fa-right-left"></i><br>Transfers</div>
+          </div>
+          <div class="d-flex justify-content-center me-5" id="rows">
+            <div id="cols" class="m-5"><i class="fa-solid fa-dice "></i><br>ACTIVITIES</div>
+            <div id="cols" class="m-5"><i class="fa-solid fa-person-hiking"></i><br>HIKING</div>
+            <div id="cols" class="m-5"><i class="fa-solid fa-building-columns "></i><br>ATTRACTIONS</div>
+        </div>
+        <div class="d-flex justify-content-center me-5" id="rows">
+          <div id="cols" class="m-5"><i class="fa-solid fa-tents "></i><br>ADVENTURE</div>
+          <div id="cols" class="m-5"><i class="fa-solid fa-hill-rockslide "></i><br>CLIMBING</div>
+          <div id="cols" class="m-5"><i class="fa-solid fa-person-biking "></i><br>CYCLING</div>
+      </div>
+        </div>
+      </div>
+     </section>
+
+    <!-- latest -->
+     <section class="latest" id="blogss">
+          <h2 id="h2heads">Latest Blogs..</h2>
+          <div class="d-flex justify-content-around">
+             <div class="card" style="width: 21rem; background-color: rgb(176, 203, 228); box-shadow: 3px 3px 3px 3px black;">
+                <img src="https://cdn.pixabay.com/photo/2017/05/31/18/38/sea-2361247_640.jpg" class="card-img-top" alt="..." height="250px">
+                <div class="card-body">
+                  <h5 class="card-title">Oceania</h5>
+                  <p class="card-text">The wibbly-wobbly line that we draw around Oceania comes to include a lot of water. The surf bum, the sailor, and the diver are sure to find their Eden here while backpacking Oceania....</p>
+                  <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+                </div>
+              </div>
+              <div class="card" style="width: 21rem; background-color: rgb(176, 220, 228); box-shadow: 3px 3px 3px 3px black;">
+                <img src="https://cdn.pixabay.com/photo/2018/05/24/02/07/manhattan-3425664_640.jpg" class="card-img-top" alt="..." height="250px">
+                <div class="card-body">
+                  <h5 class="card-title">Central America</h5>
+                  <p class="card-text">Central America is an enchanting amalgamation of jungles, surf beaches, (tequila), and volcanoes. This part of the world attracts a certain kind of vagrant and broke backpacker....</p>
+                  <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+                </div>
+              </div>
+              <div class="card" style="width: 21rem; background-color: rgb(188, 176, 228);  box-shadow: 3px 3px 3px 3px black;">
+                <img src="https://cdn.pixabay.com/photo/2021/01/19/19/28/street-5932230_640.jpg" class="card-img-top" alt="..." height="250px">
+                <div class="card-body">
+                  <h5 class="card-title">Europe</h5>
+                  <p class="card-text">There is no region on earth with such a diverse range of landscapes, cultures and languages contained within such a small(ish) space.Everywhere else is frankly boring when...</p>
+                  <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+                </div>
+              </div>
+              <div class="card" style="width: 21rem; background-color: rgb(176, 186, 228); box-shadow: 3px 3px 3px 3px black;">
+                <img src="https://cdn.pixabay.com/photo/2019/09/03/09/19/norway-4449022_640.jpg" class="card-img-top" alt="..." height="250px">
+                <div class="card-body">
+                  <h5 class="card-title">Scandinavia</h5>
+                  <p class="card-text">Scandinavia is one of the most idyllic regions of the world. Blessed with fantastic mountains, jaw-dropping fjords, wild rivers, beautiful coastline, super-efficient cities, postcard-worthy....</p>
+                  <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+                </div>
+              </div>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center mt-5">
+              <li class="page-item"><a class="page-link bg-primary-subtle" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link bg-primary-subtle" href="#">1</a></li>
+              <li class="page-item"><a class="page-link bg-primary-subtle" href="#">2</a></li>
+              <li class="page-item"><a class="page-link bg-primary-subtle" href="#">3</a></li>
+              <li class="page-item"><a class="page-link bg-primary-subtle" href="#">Next</a></li>
+            </ul>
+          </nav>
+     </section>
+
+     <!-- blogs -->
+      <section class="blogs">
+        <h2 id="h2heads">Blog Posts</h2>
+
+        <h3 class="text-center mb-4">Adventures</h3>
+        <div class="d-flex justify-content-around">
+                <div class="card" style="width: 18rem; background-color: rgba(113, 140, 166, 0.681);  box-shadow: 3px 3px 3px 3px black;">
+                   <img src="https://shaleewanders.com/wp-content/uploads/2024/07/320A7145-1024x683.jpg" class="card-img-top" alt="..." height="250px">
+                   <div class="card-body">
+                     <h5 class="card-title">Iceland</h5>
+                     <p class="card-text">The average high during the summer in Iceland is around 57 degrees. My first two visits were sunnier and warmer than average, while my latest visit was much colder. When in Iceland,....</p>
+                     <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+                   </div>
+                 </div>
+                 <div class="card" style="width: 18rem; background-color: rgba(113, 140, 166, 0.681); box-shadow: 3px 3px 3px 3px black;">
+                   <img src="https://shaleewanders.com/wp-content/uploads/2024/03/DJI_0872-1-2-729x1024.jpeg" class="card-img-top" alt="..." height="250px">
+                   <div class="card-body">
+                     <h5 class="card-title">Keewenaw Peninsula</h5>
+                     <p class="card-text">Located in far northern Michigan, the Keweenaw Peninsula is the best place in the state to disconnect, relax, and soak up Pure Michigan beauty & sites. Head up in late September/early....</p>
+                     <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+                   </div>
+                 </div>
+                 <div class="card" style="width: 18rem; background-color: rgba(113, 140, 166, 0.681); box-shadow: 3px 3px 3px 3px black;">
+                   <img src="https://shaleewanders.com/wp-content/uploads/2024/01/IMG_0477-768x1152.jpg" class="card-img-top" alt="..." height="250px">
+                   <div class="card-body">
+                     <h5 class="card-title">Acatenango</h5>
+                     <p class="card-text">The climb can be done easily in a day, and also overnight on your own. There were many people hiking the mountain alone while we were on it, carrying their own tents and gear....</p>
+                     <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+                   </div>
+                 </div>
+                 <div class="card" style="width: 18rem; background-color: rgba(113, 140, 166, 0.681);  box-shadow: 3px 3px 3px 3px black;">
+                   <img src="https://whirled-away.com/wp-content/uploads/2024/06/25-min-768x561.jpg" class="card-img-top" alt="..." height="250px">
+                   <div class="card-body">
+                     <h5 class="card-title">India to Nepal</h5>
+                     <p class="card-text">We got a taste of the mountains ahead on the bus ride to Syrabru Besi. The road was worse than the trek itself could possibly be. It involved teetering on hairpin bends of the sort that made....</p>
+                     <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+                   </div>
+                 </div>
+        </div>
+        <div class="d-flex justify-content-end m-5">
+            <button type="button" class="btn btn-dark">View All &nbsp;<i class="fa-solid fa-arrow-right fa-beat"></i></button>
+           </div>
+        
+        <h3 class="text-center mb-4 mt-4">Cultural</h3>
+        <div class="d-flex justify-content-around">
+            <div class="card" style="width: 18rem; background-color: rgba(149, 113, 166, 0.681); box-shadow: 3px 3px 3px 3px black;">
+               <img src="https://brightnomad.net/wp-content/uploads/Shakespear-Street-Art-neat-the-Globe.jpg" class="card-img-top" alt="..." height="250px">
+               <div class="card-body">
+                 <h5 class="card-title">Street Art</h5>
+                 <p class="card-text">One of the things that’s always on my bucket list in any city I go to is taking a street art tour. Local guides know the stories behind the artworks, the techniques used and even what the....</p>
+                 <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+               </div>
+             </div>
+             <div class="card" style="width: 18rem; background-color: rgba(149, 113, 166, 0.681);  box-shadow: 3px 3px 3px 3px black;">
+               <img src="https://brightnomad.net/wp-content/uploads/Greek-National-Opera.jpg" class="card-img-top" alt="..." height="250px">
+               <div class="card-body">
+                 <h5 class="card-title">Theatre and Opera</h5>
+                 <p class="card-text">I’m a huge fan of London’s theatre scene, both its massive West End productions and its more modest fringe theatre.In other countries, if you don’t speak the language, you may still be able to find other....</p>
+                 <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+               </div>
+             </div>
+             <div class="card" style="width: 18rem; background-color: rgba(149, 113, 166, 0.681);  box-shadow: 3px 3px 3px 3px black;">
+               <img src="https://brightnomad.net/wp-content/uploads/The-National-Gallery-London.jpg" class="card-img-top" alt="..." height="250px">
+               <div class="card-body">
+                 <h5 class="card-title">The National Gallery</h5>
+                 <p class="card-text">The remarkable collection of paintings at the National Gallery in Trafalgar Square includes works by famous artists, such as Leonardo da Vinci, Vincent van Gogh, and Claude Monet.....</p>
+                 <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+               </div>
+             </div>
+             <div class="card" style="width: 18rem; background-color: rgba(149, 113, 166, 0.681);  box-shadow: 3px 3px 3px 3px black;">
+               <img src="https://brightnomad.net/wp-content/uploads/Brighton-Museum.jpg" class="card-img-top" alt="..." height="250px">
+               <div class="card-body">
+                 <h5 class="card-title">The Brighton Museum & Art Gallery</h5>
+                 <p class="card-text">After the Pavilion, check out the city museum. It’s just a short walk away, through the Pavilion Gardens.I saw both the Pavilion and the museum on the same ...</p>
+                 <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+               </div>
+             </div>
+    </div>
+    <div class="d-flex justify-content-end m-5">
+        <button type="button" class="btn btn-dark">View All &nbsp;<i class="fa-solid fa-arrow-right fa-beat"></i></button>
+       </div>
+
+       <h3 class="text-center mb-4 mt-4">Food&Drink</h3>
+       <div class="d-flex justify-content-around">
+        <div class="card" style="width: 18rem; background-color: rgba(113, 166, 159, 0.681);  box-shadow: 3px 3px 3px 3px black;">
+           <img src="https://images.squarespace-cdn.com/content/v1/5cf68caa3610570001240f03/1722683620573-NJEG0HYJZS3RND6I6IFD/453403921_10160128230824150_8051385416186614350_n.jpg?format=500w" class="card-img-top" alt="..." height="250px">
+           <div class="card-body">
+             <h5 class="card-title">Junk Bar and Restaurant</h5>
+             <p class="card-text">Junk Bar & Restaurant is a delightful culinary haven located at 58 South Clerk Street, Newington, Edinburgh EH8 9PS. This gem combines street food flair with a sophisticated twist....</p>
+             <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem; background-color: rgba(113, 166, 159, 0.681); box-shadow: 3px 3px 3px 3px black;">
+           <img src="https://images.squarespace-cdn.com/content/v1/5cf68caa3610570001240f03/1722683690950-HUEM29F59PCV8KQ1DY92/448054694_991616702965235_440010408051421556_n.jpg?format=500w" class="card-img-top" alt="..." height="250px">
+           <div class="card-body">
+             <h5 class="card-title">Luxford Burgers</h5>
+             <p class="card-text">Luxford Burgers is Edinburgh’s gourmet burger restaurant and lounge bar. Located at 107-109 St Leonard’s Street, EH8 9QY, they specialise in mouth-watering fried chicken and beef burgers....</p>
+             <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem; background-color: rgba(113, 166, 159, 0.681); box-shadow: 3px 3px 3px 3px black;">
+           <img src="https://images.squarespace-cdn.com/content/v1/5cf68caa3610570001240f03/1722683793593-052TG918QMU1ZR02PF9F/210419261_10158222334194150_8036015072064796677_n.jpg?format=500w" alt="..." height="250px">
+           <div class="card-body">
+             <h5 class="card-title">Kampong Ah Lee</h5>
+             <p class="card-text">Kampong Ah Lee is an authentic Malaysian restaurant nestled in the heart of Edinburgh. Located at 28 Clerk Street, EH8 9HX, this culinary gem celebrates the rich tapestry of Malaysian cuisine....</p>
+             <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem; background-color: rgba(113, 166, 159, 0.681);  box-shadow: 3px 3px 3px 3px black;">
+           <img src="https://images.squarespace-cdn.com/content/v1/5cf68caa3610570001240f03/1722684037584-QL3CQQUJAI1QQ1F1QPP1/421010548_10159801219214150_6053750380087825502_n.jpg?format=500w" class="card-img-top" alt="..." height="250px">
+           <div class="card-body">
+             <h5 class="card-title">Pakora Bar</h5>
+             <p class="card-text">The Pakora Bar is a small, independent street-food specialist in Edinburgh, inspired by Punjabi cuisine. Located at 111 Holyrood Road, Clock Tower, EH8 8AU, this vibrant restaurant offers...</p>
+             <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+           </div>
+         </div>
+</div>
+<div class="d-flex justify-content-end m-5">
+    <button type="button" class="btn btn-dark">View All &nbsp;<i class="fa-solid fa-arrow-right fa-beat"></i></button>
+   </div>
+
+   <h3 class="text-center mb-4 mt-4">Travel Tips</h3>
+       <div class="d-flex justify-content-around">
+        <div class="card" style="width: 18rem; background-color: rgba(59, 68, 127, 0.681); box-shadow: 3px 3px 3px 3px black;">
+           <img src="https://www.travellikeanna.com/wp-content/uploads/2023/10/Mazurek_London_BigBend.jpg" class="card-img-top" alt="..." height="250px">
+           <div class="card-body">
+             <h5 class="card-title">Travel Safety Tips</h5>
+             <p class="card-text">As a woman who travels solo most of the time, I am always thinking about my safety. I wanted to share a few tips for things to pack for safety along with how to stay safe online. I’m currently....</p>
+             <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem; background-color: rgba(59, 68, 127, 0.681);  box-shadow: 3px 3px 3px 3px black;">
+           <img src="https://www.travellikeanna.com/wp-content/uploads/2019/12/Mazurek_Angels_Landing_Zion.jpg" class="card-img-top" alt="..." height="250px">
+           <div class="card-body">
+             <h5 class="card-title">11 Great Travel Gifts</h5>
+             <p class="card-text">
+                After 15 months of sitting still, I started traveling again this year after I was vaccinated!  I also have some EXCITING NEWS—I’m going on a last-minute work trip to Antarctica in December! ....</p>
+             <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem; background-color: rgba(59, 68, 127, 0.681); box-shadow: 3px 3px 3px 3px black;">
+           <img src="https://www.travellikeanna.com/wp-content/uploads/2017/03/Mazurek_Austin.jpg" alt="..." height="250px">
+           <div class="card-body">
+             <h5 class="card-title">The Ultimate Guide to Austin</h5>
+             <p class="card-text">Austin knows the key to my heart – flip-flop weather roughly 10 months of the year, a plethora of outdoor activities, amazing food and craft beer. And, live music—of course!....</p>
+             <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem; background-color: rgba(59, 68, 127, 0.681);  box-shadow: 3px 3px 3px 3px black;">
+           <img src="https://www.travellikeanna.com/wp-content/uploads/2022/03/Mazurek_MonoLake_web.jpg" class="card-img-top" alt="..." height="250px">
+           <div class="card-body">
+             <h5 class="card-title">My Top 5 Travel Hacks</h5>
+             <p class="card-text">I keep a running list in a note on my phone about the random things that make my travels easier, cheaper and less stressful. I picked five of my favorite ones to share with you here. If you like this...</p>
+             <a href="#" class="btn btn-dark" id="btnlatest">Read More</a>
+           </div>
+         </div>
+</div>
+<div class="d-flex justify-content-end m-5">
+    <button type="button" class="btn btn-dark">View All &nbsp;<i class="fa-solid fa-arrow-right fa-beat"></i></button>
+   </div>
+      </section>
+
+      <!-- personal blog -->
+       <section class="personal">
+        <div id="backimg2">
+          <br><br>
+           
+            <div class="d-flex justify-content-around" id="lloyd">
+                <div style="margin-left: 80px;">
+                  <p class="mt-3">Lloyd Alen</p>
+                  <h1 style="font-size: 80px;">A Fun Morning At A Baking Class In London</h1>
+                  <p>May 9, 2024</p>
+                </div>
+                <div style="margin-right: 50px;">
+                  <h5 style="margin-left: 320px; margin-top: 120px; font-size: 30px;">
+                    My name's Lloyd and I have a confession... I've got a major sweet tooth that just won't quit! And I know I say problem but honestly, its not something that I feel the need to change. Chocolate is my kryptonite but in the absence of chocolate, I'll take anything else that's available! You might remember when we went to explore the stunning little villages in the Cotswolds and staying at the impressively stately Wood Norton Hotel. Well on one of the nights there, we stumbled (after a glorious dinner) for cocktails at the bar  where we bumped into Lisa. Lisa's a Londoner who owns and runs Madeline's Cake Boutique, a sugary heaven located in…
+                  </h5>
+                  <div class="d-flex justify-content-end m-5">
+                    <button type="button" class="btn btn-dark">Read All &nbsp;<i class="fa-solid fa-arrow-right fa-beat"></i></button>
+                   </div>
+
+               
+                </div>
+            </div>
+          
+          </div>
+
+       </section>
+
+       <!-- destinations -->
+        <section class="destinations" id="destinationss">
+          <h1 class="text-center pt-5">Destinations</h1>
+          <div class="m-5">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Africa
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-center">
+                     <h4>South Africa</h4><br>
+                     <h4>Zambia</h4><br>
+                     <h4>Zimbawe</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Antarctica
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-center">
+                     <h4>Antarctic Peninsula</h4><br>
+                     <h4>South Georgia Island</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Asia
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-center">
+                     <h4>Combodia</h4><br>
+                     <h4>China</h4><br>
+                     <h4>Hong Kong</h4><br>
+                     <h4>India</h4><br>
+                     <h4>Indonesia</h4><br>
+                     <h4>Japan</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Caribbean & Central
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-center">
+                     <h4>Bahamas</h4><br>
+                     <h4>Puerto Rico</h4><br>
+                     <h4>Sint Maarten</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Europe
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-center">
+                     <h4>Austria</h4><br>
+                     <h4>Belgium</h4><br>
+                     <h4>Croatia</h4><br>
+                     <h4>Denmark</h4><br>
+                     <h4>France</h4><br>
+                     <h4>Portugal</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Middle East
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-center">
+                     <h4>Kuwait</h4><br>
+                     <h4>Saudhi</h4><br>
+                     <h4>Dubai</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Oceania
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-center">
+                     <h4>Guam</h4><br>
+                     <h4>New Zealand</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    North America
+                  </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-center">
+                     <h4>California</h4><br>
+                     <h4>Florida</h4><br>
+                     <h4>New York</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                    South America
+                  </button>
+                </h2>
+                <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-center">
+                     <h4>Amazon</h4><br>
+                     <h4>Brazil</h4><br>
+                     <h4>Falkland Islands</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- about -->
+        <section class="about" id="aboutss">
+          <div id="backimg3">
+            <br><br>
+            <div id="abouts">
+              <div>
+                <br>
+                <h2 style="text-align: center; text-decoration: underline; text-shadow: 3px 3px 3px rgb(255, 255, 255); font-size: 50px; color: rgb(0, 0, 0); background-color: rgba(255, 255, 255, 0.6); width: 300px; height: 60px; margin: auto; border-radius: 20px; ">About Us</h2>
+              </div>
+              <p style="padding: 30px; font-size: 25px; background-color: rgba(255, 255, 255, 0.542); margin: 30px; border-radius: 20px; ">We are a group of passionate travelers united by our love for exploration and discovery. Our journeys have taken us across various landscapes, from bustling cities to tranquil nature spots, and we are eager to share these experiences with the world. Our mission goes beyond merely recounting our travels; we aim to ignite a sense of wanderlust in others. Whether you're looking for hidden gems, cultural insights, or thrilling adventures, we hope to inspire you to step out of your comfort zone, embrace new experiences, and explore the diverse beauty our world has to offer. Through our stories, tips, and recommendations, we strive to be your trusted companions on your journey to discover new destinations, enrich your understanding of different cultures, and embark on unforgettable adventures.</p>
+            </div>
+            </div>
+                
+        </section>
+
+        <!-- contact -->
+         <section class="contacts" id="contactss">
+          <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Mountain" class=" rounded-circle" height="500px" width="500px">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card1 p-5">
+                        <h3 class="card1-title">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter a valid email address">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-50" style="margin-left: 140px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+         </section>
+
+         <!-- footer -->
+         <footer class="footer bg-dark text-white ">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-6">
+                      <!-- Website Logo -->
+                      <img src="./logo.jpg" alt="Website Logo" class="img-fluid logo rounded-circle">
+                  </div>
+                  <div class="col-6 ">
+                      <!-- Contact Us Section -->
+                      <h5 class="text-center">Contact Us</h5>
+                      <p class="text-center">
+                          7th Avenue, Adventure City, 13579<br>
+                          Phone: +123 456 7890<br>
+                          Email: contact@packyourbags.com
+                      </p>
+                      
+                  </div>
+                  <div class="social-icons d-flex justify-content-center">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f "></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+          </div>
+      </footer>
+      
+  
+</body>
+</html>

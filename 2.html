@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack Your Bags</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff !important;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .card {
+            margin-bottom: 30px;
+        }
+
+        .author-bio img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .author-bio {
+            display: flex;
+            align-items: center;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background-color: #007bff;
+        }
+
+        .accordion-button {
+            font-weight: bold;
+        }
+
+        .accordion-body ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .accordion-body ul li {
+            margin-bottom: 10px;
+        }
+
+        .accordion-body ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .accordion-body ul li a:hover {
+            text-decoration: underline;
+        }
+
+        form input,
+        form textarea {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pack Your Bags</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section with Carousel -->
+    <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="banner1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="banner2.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Featured Blog Posts -->
+    <div class="container mt-5" id="home">
+        <h2>Featured Posts</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="post1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 1</h5>
+                        <p class="card-text">Brief excerpt of the post...</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="post2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 2</h5>
+                        <p class="card-text">Brief excerpt of the post...</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="post3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 3</h5>
+                        <p class="card-text">Brief excerpt of the post...</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="container mt-5" id="blog">
+        <h2>Blog Posts</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="blog1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Adventure Blog</h5>
+                        <p class="card-text">A brief excerpt...</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="blog2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cultural Blog</h5>
+                        <p class="card-text">A brief excerpt...</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="blog3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Food & Drink Blog</h5>
+                        <p class="card-text">A brief excerpt...</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Individual Blog Post Page -->
+    <div class="container mt-5" id="blog-post">
+        <h2>Blog Post Title</h2>
+        <p>By Author Name | Date</p>
+        <img src="blog-image.jpg" class="img-fluid" alt="...">
+        <p>Full blog content goes here...</p>
+        <div class="author-bio mt-5">
+            <img src="author.jpg" alt="Author">
+            <p>About the Author: Brief bio here...</p>
+        </div>
+    </div>
+
+    <!-- Destinations Section -->
+    <div class="container mt-5" id="destinations">
+        <h2>Destinations</h2>
+        <div class="accordion" id="destinationsAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Europe
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#destinationsAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">Travel in Paris</a></li>
+                            <li><a href="#">Exploring Rome</a></li>
+                            <li><a href="#">Adventure in the Alps</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Asia
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#destinationsAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">Discovering Japan</a></li>
+                            <li><a href="#">Exploring Thailand</a></li>
+                            <li><a href="#">Trekking in the Himalayas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Feature -->
+    <div class="container mt-5" id="search">
+        <form>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search travel posts...">
+                <button class="btn btn-outline-secondary" type="button">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- About Section -->
+    <div class="container mt-5" id="about">
+        <h2>About Us</h2>
+        <p>We are a group of passionate travelers who love to share our experiences with the world. Our mission is to
+            inspire others to explore new destinations, cultures, and adventures.</p>
+        <img src="team.jpg" class="img-fluid" alt="Team">
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container mt-5" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pack Your Bags. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-QAg2cC9UzKckszJm3z52A6WncnTClmSORe9RuhA/FaSp4cklnF6McfRbdz45qK3A"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
